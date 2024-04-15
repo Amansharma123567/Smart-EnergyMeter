@@ -1,0 +1,112 @@
+
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Akshay bhai</title>
+    <style>
+        body{
+            background-color: lightgray;
+            #table{
+                border: 2px solid white;
+                margin-left: 390px;
+                margin: top 40px;
+            }
+            .tr{
+                border: 2px solid white;
+            }
+            .data{
+                border: 2px solid green;
+                font-size: 60px;
+                padding-left: 80px;
+                padding-right: 80px;
+            }
+            h1{
+                margin-top: 5px;
+                text-align: center;
+                background-color: rgb(151, 207, 226);
+                font-size: 90px;
+                font-style: normal;
+            }
+            .back{
+                background-color:rgb(207, 150, 160);
+            }
+        }
+    </style></head>
+    
+    <body>
+        <h1>Smart Energy Meter uisng IOT</h1>
+        <div>
+            <table id="table">
+                <tbody><tr class="back">
+                    <th class="data">Parameter</th>
+                    <th class="data">Value</th>
+                    <th class="data">Unit</th>
+                </tr>
+    
+                <tr class="tr">
+                    <td class="data">Voltage</td>
+                    <td class="data"></td>
+                    <td class="data">volt</td>
+                </tr>
+    
+                <tr class="tr">
+                    <td class="data">current</td>
+                    <td class="data"></td>
+                    <td class="data">ampere</td>
+                </tr>
+                <tr class="tr">
+                    <td class="data">power factor</td>
+                    <td class="data"></td>
+                    <td class="data">xxx</td>
+                </tr>
+                <tr class="tr">
+                    <td class="data">power</td>
+                    <td class="data"></td>
+                    <td class="data">watt</td>
+                </tr>
+                <tr class="tr">
+                    <td class="data">frequency</td>
+                    <td class="data"></td>
+                    <td class="data">hertz</td>
+                </tr>
+            </tbody></table>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
